@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkySage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="you">
+    <header>
+        <nav>
+            <div class="left">
+                <img id="logo" src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html">weather forcast</a></li>
+                    <li><a href="communities.html">Communities</a></li>
+                    <li><a href="updates.html">Updates</a></li>
+                    <li> <a href="funds.html">Donate</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="box">
+        <img src="images/rain-in-shimla--himachal-pradesh-141304-16x9.jpg" class="flood" alt="">
+        <h4>Over 50 dead in Himachal rain fury; landslides in Uttarakhand, buildings damaged</h4>
+        <p>As on 14 August 2023 as many as 50 people were killed in rain-related incidents in Himachal Pradesh, while heavy downpours in Uttarakhand triggered landslides and caused several rivers to swell. Schools and colleges were closed in these states.Incessant rainfall battered the hill states of Uttarakhand and Himachal Pradesh, throwing normal life out of gear.
+
+            At least 50 people died in rain-related incidents in Himachal Pradesh, Chief Minister Sukhvinder Singh Sukhu said, as heavy rains continued to pound the state. In neighbouring Uttarakhand, torrential downpours triggered landslides, washing away bridges, forcing the closure of educational institutions and causing water levels of rivers to swell.</p>
+        <a href="javascript:void();" class="readmore-btn">Read More</a>
+    </div>
+    <div class="box">
+        <img src="images/img2.jpeg" class="flood" alt="">
+        <h4>“Red Alert has been issued in Nainital, Champawat, Udham Singh Nagar and Pauri District.</h4>
+        <p>As the northern state of Uttarakhand continues to witness monsoon fury, India Meteorological Department on August 09 issued a red alert for various parts of the hilly state starting from today to August 12. The ‘red alert’ areas include Nainital, Champawat, Udham Singh Nagar, and Pauri District. Apart from that, an orange alert with heavy to very heavy rainfall has been alerted in areas of Dehradun, Tehri, and Almora. People living along the river beds and other vulnerable areas were cautioned. “Red Alert has been issued in Nainital, Champawat, Udham Singh Nagar and Pauri District. While areas of Dehradun, Tehri and Almora has been cautioned with Orange Alert,”</p>
+        <a href="javascript:void();" class="readmore-btn">Read More</a>
+    </div>
+    <div class="box">
+        <img src="images/img3.jpeg" class="flood" alt="">
+        <h4>A cloudburst has occurred in Jadon village within the Kandaghat sub-division of Solan, Himachal pradesh.</h4>
+        <p>A cloudburst has occurred in Jadon village within the Kandaghat sub-division of Solan, Himachal pradesh. The incident has resulted in the washing away of two houses and a cowshed due to the intense and sudden release of rainwater.14-Aug-2023.himachal pradesh rain fury: 
+            on august 14,2023 land slide in shimla,himachal pradesh, happened at the backside of the campus. landslide destroyed the shivabari temple</p>
+        <a href="javascript:void();" class="readmore-btn">Read More</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script>
+        $(".readmore-btn").on('click', function () {
+            $(this).parent().toggleClass("showContent");
+
+            var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" : "Read More";
+            $(this).text(replaceText);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkySage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="you1">
+    <header>
+        <nav>
+            <div class="left">
+                <img id="logo" src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html">Weather Forcast</a></li>
+                    <li><a href="communities.html">Communities</a></li>
+                    <li><a href="updates.html">Updates</a></li>
+                    <li> <a href="funds.html">Donate</a></li>
+                    <li ><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div id="box1" class="bbx">
+            <div>
+                <img src="images/goonj.png" alt="">
+            </div>
+            <div>
+            <p>Name:Goonj<br>Contact: 011-26972351, 41401216<br>Email:mail@goonj.org</p>
+            <p>Goonj is a non-governmental organisation headquartered in New Delhi, India, that undertakes disaster relief, humanitarian aid and community development in parts of 23 states across India. Goonj focuses on clothing as a basic but unaddressed need.
+
+                It was founded in 1999 by Anshu Gupta.For his work with Goonj, he was awarded the Ramon Magsaysay Award in 2015.In 2012, he was named India's Social Entrepreneur of the Year 2012 by Schwab Foundation, a sister organization of World Economic Forum.Goonj, formed in 1999 by Anshu Gupta,started with 67 clothes and now it deals over 3500 tonnes of material every year. It is registered under Societies Act and registered for exemption under Section 80 G, 12 A and for foreign contributions - under FCRA. A couple of real life incidents prompted Anshu Gupta to realise that clothing was overlooked as a basic human right</p>
+            
+            </div>
+            <a href="javascript:void();" class="readmore-btn2">Read More</a>
+        </div>
+        <div id="box2" class="bbx">
+            <div>
+                <img src="images/godharmic.jpg" alt="">
+            </div>
+            <div>
+            <p>Name:Go Dharmic<br>Contact:+91 986 771 6667<br>Email:info@godharmic.com</p>
+            <p>Founded in 2011, Go Dharmic enables a variety of social change campaigns across the world. The organisation is raising funds to provide relief materials like blankets, clothes, tents, medicines, and food kits to the families who have lost their homes and loved ones.Go Dharmic was started in 2011 by Hemal Randerwala. He was given the spiritual name Hanuman Dass by former Harvard Professor Ram Dass who introduced him to his beloved Guru and Saint, Neem Karoli Baba.We are on a mission to be a force for good galvanising 1 million volunteers for social action campaigns! Go Dharmic is a growing movement for individual and social change.</p>
+            </div>
+            <a href="javascript:void();" class="readmore-btn2">Read More</a>
+        </div>
+        <div id="box3" class="bbx">
+            <div>
+                <img src="images/casa.jpg" alt="">
+            </div>
+            <div>
+            <p>Name:CASA India<br>Contact:+91-11-25730611<br>Email:info@casa-india.org</p>
+            <p>Church's Auxiliary for Social Action or CASA (founded in 1947) is a non-religious Indian development organisation based in New Delhi and a service wing of the National Council of Churches in India comprising the Orthodox and Protestant Church Societies in India. CASA is a member of ACT AllianceCASA is an Indian development and humanitarian organisation, which has decided to support victims of the Uttarakhand floods by providing disaster relief kits which include hygiene and dry ration kits, utensils, tarpaulin sheets.As a development non-religious organisation the activities of CASA are funded through the individuals, the Churches in India, the State, the corporates and a few overseas ecumenical bodies.</p>
+            </div>
+            <a href="javascript:void();" class="readmore-btn2">Read More</a>
+        </div>
+        <div id="box4" class="bbx">
+            <div>
+                <img src="images/rapidresponse.png" alt="">
+            </div>
+            <div>
+            <p>Name:Rapid Response<br>Contact:6381115610<br>Email:info@rapidresponse.org.in</p>
+            <p>Rapid Response is an award winning organisation, providing disaster response & preparedness services across India. As a disaster relief agency, we help people to survive and rebuild their lives through food, medical, education, shelter and livelihood programs. Our most recent interventions in Maharashtra, Karnataka and Assam have impacted thousands of lives!.Rapid Response is a registered non-profit organisation committed to provide emergency assistance and long term solutions to victims of disasters.</p>
+            </div>
+            <a href="javascript:void();" class="readmore-btn2">Read More</a>
+        </div>
+        <div id="box5" class="bbx">
+            <div>
+                <img src="images/smilefoundation.jpg" alt="">
+            </div>
+            <div>
+            <p>Name:Smile Foundation<br>Contact:8076057177<br>Email:info@smilefoundationindia.org</p>
+            <p>Smile Foundation was initiated in 2002 when a group of friends came together with the intention of giving back to the society. They were inspired by the thought and philosophy of Peter Senge, the founder of the Society for Organizational Learning who has propagated that “sustainability, social equality and the environment are now business problems…” and corporate leaders can’t expect governments to solve them alone.
+
+                What triggered these thoughts was the liberalisation of the Indian economy in the 1990’s which brought with it immense opportunities. Business revived, and India became not just a market, but also an investment prospect for the developed world. Disposable incomes and early settlements became a living reality for the working middle-class. For the first time in India, professionals could think beyond making a living, and contribute towards the society.</p>
+                </div>
+            <a href="javascript:void();" class="readmore-btn2">Read More</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script>
+        $(".readmore-btn2").on('click',function(){
+            $(this).parent().toggleClass("showContent");
+            
+            var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" : "Read More";
+            $(this).text(replaceText);
+        });
+    </script>
+</body>
+</html>
